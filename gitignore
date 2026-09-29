@@ -1,0 +1,11 @@
+# Dados de clientes: nunca versionar
+*.xlsx
+*.xls
+*.xlsm
+*.txt
+!requirements.txt
+
+# Python
+__pycache__/
+.venv/
+*.pyc
