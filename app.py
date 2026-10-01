@@ -1,6 +1,6 @@
 """Conversor Excel (ERP) -> TXT, ordenado pela data do lançamento.
 
-Executar:  streamlit run app.py
+Executar:  streamlit run painel.py  (a partir de C:\\Projetos)
 """
 import pandas as pd
 import streamlit as st
@@ -58,7 +58,7 @@ def gerar_linhas(df, colunas, sep, fmt_data, valor_virgula, cabecalho, ignorar_s
 
 
 # ------------------------------- Interface -------------------------------
-st.set_page_config(page_title="Conversor Excel → TXT", page_icon="🔄", layout="centered")
+st.page_link("painel.py", label="Voltar ao painel", icon="🏠")
 st.title("🔄 Conversor Excel → TXT")
 st.caption("Envie o Excel original do ERP. O TXT sai ordenado pela data do lançamento.")
 
